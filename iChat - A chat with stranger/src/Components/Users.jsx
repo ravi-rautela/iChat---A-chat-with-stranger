@@ -3,11 +3,11 @@ import User from "./User";
 
 const Users = () => {
   return (
-    <div >
+    <div>
       <User />
       <User />
       <User />
-     
+   
     </div>
   );
 };
