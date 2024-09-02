@@ -8,7 +8,7 @@ const generateTokenAndCookies = (userId, res) => {
     res.cookie("jwt", token, {
         httpOnly: true, // protect from XSS attack
         secure: true,
-        sameSite: true // protect from CSRF attack
+        sameSite: "strict" // protect from CSRF attack
     })
 }
 
